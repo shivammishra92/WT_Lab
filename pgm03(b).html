@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //Method-01
+    // let n = prompt("Enter a number:");
+    // let num = parseInt(n);
+    // let rem = 0;
+    // let rev = 0;
+
+    // for (let t = num; t != 0; t = Math.floor(t / 10)) {
+    //   rem = t % 10;
+    //   rev = rev * 10 + rem;
+    // }
+    // document.write("Reverse of the original number is : ", rev);
+
+    //Method-02
+    let n = prompt("Enter a number:");
+    document.write("The origial number is: " + n + "<br>");
+    function reverseNumber(num) {
+      return (
+        parseFloat(num.toString().split("").reverse().join("")) * Math.sign(num)
+      );
+    }
+
+    document.write("Reverse of the original number is : ", reverseNumber(n));
+  </script>
+</html>
