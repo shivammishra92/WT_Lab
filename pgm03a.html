@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let s = prompt("Enter a sentence:");
+    document.write("The origial sentene is: " + s + "<br>");
+    let n = s.length;
+    let flag = false;
+    for (let i = 0; i < n; i++) {
+      let ch = s.charAt(i);
+
+      if (ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u") {
+        document.write("The first occurence of the vowel is at : " + (i + 1));
+        flag = true;
+        break;
+      }
+    }
+    if (flag == false) document.write("Vowel not found!!");
+  </script>
+</html>
