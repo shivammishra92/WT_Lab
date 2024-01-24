@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>PHP Greetings</title>
+</head>
+<style>
+body{
+        background-color:#7CB9E8;
+        text-align:center;
+        font-size:2rem;
+        border:2px dashed grey;
+        margin-top:5rem;
+}
+</style>
+<body>
+        <h1>PHP Greetings</h1>
+        <p>Click the button to get a random greeting:</p>
+        <button onclick="loadDoc()">Get Greeting</button>
+        <p id="demo"></p>
+        <script>
+                function loadDoc() {
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                                if (this.readyState == 4 && this.status == 200) {
+                                        document.getElementById("demo").innerHTML = this.responseText;
+                                }
+                        };
+                        xhttp.open("GET", "greetings.php", true);
+                        xhttp.send();
+                }
+        </script>
+</body>
+</html>
