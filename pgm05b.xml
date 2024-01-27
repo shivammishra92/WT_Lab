@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<? xml-stylesheet type = "text/xsl" href = "pg05.xsl" ?>
+<students>
+
+<student>
+    <usn>USN : NIT21CS095</USN>
+    <name>NAME : SHIVAM MISHRA</name>
+    <college>COLLEGE : NIT Mysuru</college>
+    <branch>BRANCH : Computer Science and Engineering</branch>
+    <year>YEAR : 2021</year>
+</student>
+
+<student>
+    <usn>USN : 4NI21IS096</USN>
+    <name>NAME : SHIVAM RAJ</name>
+    <college>COLLEGE : NIE</college>
+    <branch>BRANCH : Information Science and Engineering</branch>
+    <year>YEAR : 2021</year>
+</student>
+
+<student>
+    <usn>USN : 4NI21IS097</USN>
+    <name>NAME : SHIVAM SHEKHAR</name>
+    <college>COLLEGE : NIE</college>
+    <branch>BRANCH : Information Science and Engineering</branch>
+    <year>YEAR : 2021</year>
+</student>
+
+</students>
